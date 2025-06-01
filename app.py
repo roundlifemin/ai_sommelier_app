@@ -27,8 +27,10 @@ with col1:
 
             with st.spinner("2단계: 요리에 어울리는 와인 리뷰를 검색하는 중..."):
                 wine_search_result = search_wine(dish_flavor)
-                st.markdown("### 🍷🍷🍷 와인 리뷰 검색 결과🍷🍷🍷")
+                st.markdown("### 🍷🍷🍷 와인 리뷰 검색 결과🍷🍷🍷")                
+                
                 st.text(wine_search_result['wine_reviews'])
+                
 
             with st.spinner("3단계: AI 소뮬리에가 와인 페어링에 대한 추천글을 생성하는 중..."):
                 wine_recommandation = recommand_wine({
